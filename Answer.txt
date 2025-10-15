@@ -1,0 +1,92 @@
+Ans 1. - Frontend Development: Focuses on the user interface — everything users see and interact with in a browser. Technologies include HTML, CSS, and JavaScript.
+- Example: A login form with styled buttons and animations.
+- Backend Development: Handles server-side logic, databases, and APIs. It processes requests and sends data to the frontend.
+- Example: Validating login credentials and retrieving user data from a database.
+- Full-Stack Development: Combines both frontend and backend skills.
+- Example: Building an entire e-commerce site — from product listings (frontend) to payment processing (backend).
+
+
+Ans 2. - Client: A browser or app that sends requests (e.g., Chrome).
+- Server: A machine or software that processes requests and sends responses.
+- Flow:
+- Client sends HTTP request.
+- Server processes it and accesses data if needed.
+- Server sends back a response (HTML/CSS/JS).
+- Browser renders the page.
+
+
+Ans 3. - URL Entry: User types a URL.
+- DNS Lookup: Browser finds the IP address of the server.
+- TCP Connection: Browser and server establish a connection.
+- HTTP Request: Browser sends a request for the page.
+- Server Response: Server sends HTML, CSS, JS files.
+- Rendering:
+- HTML is parsed into a DOM tree.
+- CSS forms a CSSOM tree.
+- JavaScript is executed.
+- Browser paints the page on screen.
+
+
+Ans 4. - VS Code: Lightweight code editor with extensions for HTML, CSS, JS.
+- Browser (e.g., Chrome): To test and debug pages.
+- Git: Version control system for tracking changes.
+- Node.js: JavaScript runtime for backend development.
+- npm: Package manager for installing libraries.
+- Live Server Extension: Auto-refresh browser on file save.
+- Terminal/Command Line: To run commands and scripts
+
+Ans 5. - A web server is software or hardware that delivers web content to clients over HTTP.
+- It stores, processes, and serves web pages.
+- Examples:
+- Apache HTTP Server
+- Nginx
+- Microsoft IIS
+- LiteSpeed
+
+Ans 6. - Frontend Developer:
+- Designs and implements UI.
+- Uses HTML, CSS, JS, and frameworks like React.
+- Backend Developer:
+- Builds server logic, APIs, and database interactions.
+- Uses languages like Python, Java, Node.js.
+- Database Administrator (DBA):
+- Manages database performance, backups, and security.
+- Uses tools like MySQL, PostgreSQL, MongoDB.
+
+
+Ans 7. - Download and install VS Code.
+- Install extensions:
+- HTML Snippets
+- CSS IntelliSense
+- JavaScript (ES6) code snippets
+- Live Server
+- Create a folder with .html, .css, and .js files.
+- Open with Live Server to preview in browser.
+
+Ans 8. - Static Website:
+- Pre-built HTML pages.
+- Same content for all users.
+- Example: A personal portfolio site.
+- Dynamic Website:
+- Content changes based on user input or database.
+- Uses server-side languages.
+- Example: Facebook or Amazon.
+
+
+Ans 9. Five popular web browsers are Chrome, Firefox, Safari, Edge, and Brave. Chrome, Edge, and Brave use Blink; Firefox uses Gecko; Safari uses WebKit. Rendering engines differ in performance, standards support, and platform optimization. Blink is fast and widely adopted, Gecko emphasizes openness, and WebKit is tailored for Apple devices.
+
+
+Ans 10. Basic Web Architecture Flow
+- Client: Sends request via browser.
+- Server: Receives and processes request.
+- Database: Stores and retrieves data.
+- APIs: Bridge between frontend and backend for data exchange.
+- Flow:
+- Client → Server → API → Database
+- Database → API → Server → Client.
+
+
+
+
+
+
