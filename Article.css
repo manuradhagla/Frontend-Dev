@@ -1,0 +1,65 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    background-color: #a79797;
+    color: #8f2b2b;
+    padding: 2rem;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Subheading */
+.subheading {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Paragraphs */
+main p {
+    margin-bottom: 1.5rem; /* consistent spacing */
+    font-size: 1.1rem;
+}
+
+/* First letter styling */
+main p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.3rem;
+    line-height: 1;
+}
+
+/* First line styling */
+main p::first-line {
+    font-weight: bold;
+}
+
+/* Highlight keywords */
+mark {
+    background-color: #ffeb3b;
+    padding: 0 0.2rem;
+}
+
+/* Blockquote styling */
+blockquote {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 5px solid #1e3a8a;
+    background-color: #e0e7ff;
+    font-style: italic;
+    color: #1a1a1a;
+}

@@ -1,0 +1,89 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+/* Team Container */
+.team-container {
+    display: flex; /* flex layout for 3 columns */
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1.5rem; /* spacing between cards */
+    width: 90%;
+    margin: 2rem auto;
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+/* Team Cards */
+.team-card {
+    background-color: #fff;
+    padding: 1.5rem; /* padding using box model */
+    margin: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* shadow effect */
+    flex: 1 1 250px; /* responsive width for cards */
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Highlighted Team Lead */
+.team-card.lead {
+    background-color: #facc15; /* different background */
+    border: 2px solid #eab308; /* different border */
+}
+
+/* Card Headings */
+.team-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* Card Paragraph */
+.team-card p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+/* Responsive: single column for screens < 600px */
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        max-width: 90%;
+    }
+}

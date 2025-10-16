@@ -1,0 +1,76 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a1202b;
+    color: #6d0f0f;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Individual Photo Container */
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(204, 22, 22, 0.2);
+    cursor: pointer;
+}
+
+/* Images */
+.photo img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Caption Overlay */
+.photo .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(153, 23, 23, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo:hover .caption {
+    opacity: 1;
+}
+
+/* Responsive spacing */
+@media(max-width: 600px) {
+    .gallery {
+        gap: 1rem;
+    }
+}
