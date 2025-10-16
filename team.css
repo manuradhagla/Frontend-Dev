@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.team-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #e9078b;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Highlight Team Lead */
+.lead {
+  background: #ffe6f2;
+  border: 2px solid #e9078b;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
