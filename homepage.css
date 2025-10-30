@@ -1,0 +1,81 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at bottom */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* evenly spaced links */
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    flex: 1; /* takes remaining vertical space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+/* Boxes inside main */
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: rotate(100deg);
+}
+
+.box h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+

@@ -1,0 +1,84 @@
+/* Reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main section layout */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    min-height: 70vh;
+}
+
+/* About section */
+.about {
+    flex: 1;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about p {
+    color: #555;
+}
+
+/* Image section */
+.image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+

@@ -1,0 +1,65 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container: center card */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    perspective: 1000px; /* perspective for 3D effect */
+}
+
+/* Card */
+.card {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+/* Flip on hover */
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+/* Card faces */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden; /* hide back face when not visible */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Front face styling */
+.card-front img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Back face styling */
+.card-back {
+    transform: rotateY(180deg); /* flipped initially */
+}

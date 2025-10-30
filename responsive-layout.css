@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header using Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main area using Grid */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Article + Sidebar */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Article */
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Boxes inside article using Flexbox */
+.boxes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    min-width: 100px;
+    background-color: #44e0be;
+    color: rgb(191, 55, 55);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Sidebar */
+aside {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Animation for title */
+.animated-title {
+    animation: fadeMove 1s ease forwards;
+}
+
+@keyframes fadeMove {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
