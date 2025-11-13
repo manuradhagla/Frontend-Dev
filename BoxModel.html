@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="BoxModel.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Box Model Exploration</h1>
+        <p>Understanding how margin, border, padding, and content interact.</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="box content-box">
+                <p>Content-Box Example</p>
+            </div>
+
+            <div class="description">
+                <h3>content-box (default)</h3>
+                <p>
+                    Width and height apply only to the content area.
+                    Padding and border add extra space around it, increasing the total size.
+                </p>
+            </div>
+
+            <div class="box border-box">
+                <p>Border-Box Example</p>
+            </div>
+
+            <div class="description">
+                <h3>border-box</h3>
+                <p>
+                    Width and height include content, padding, and border.
+                    This makes sizing easier and prevents the box from expanding unexpectedly.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Box Model Practice | Designed by Manuradha</p>
+    </footer>
+</body>
+
+</html>

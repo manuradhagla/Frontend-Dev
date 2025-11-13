@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #004b8d;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/*ADVANCED SELECTORS*/
+
+/* Select input with type="text" */
+input[type="text"] {
+    border: 2px solid #0077cc;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Select links that start with https */
+a[href^="https"] {
+    color: green;
+    text-decoration: none;
+}
+
+/* Select links that start with http (not secure) */
+a[href^="http:"] {
+    color: red;
+}
+
+/*PSEUDO-CLASSES*/
+
+/* :hover - changes color when hovered */
+a:hover {
+    text-decoration: underline;
+}
+
+/* :focus - highlights input when selected */
+input:focus {
+    outline: 2px solid #ff7e5f;
+    background-color: #fff7f0;
+}
+
+/* :nth-child() - style every even list item */
+.color-list li:nth-child(even) {
+    background-color: #e2e8f0;
+}
+
+/*PSEUDO-ELEMENTS*/
+
+/* ::before and ::after add decorative content */
+.color-list li::before {
+    content: "• ";
+    color: #0077cc;
+}
+
+.color-list li::after {
+    content: " ✓";
+    color: #2e8b57;
+}
+
+
+/*COMBINATORS
+
+/* > (child selector): style only direct p children of .parent */
+.parent>p {
+    color: #004b8d;
+    font-weight: bold;
+}
+
+/* (space) descendant selector: any p inside .inner div */
+.parent .inner p {
+    color: #555;
+    font-style: italic;
+}
+
+/* + (adjacent sibling): select the first p right after h3 */
+h3+p {
+    color: #ff6f61;
+}
+
+/* ~ (general sibling): select all p after h3 */
+h3~p {
+    background-color: #f1f5f9;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+/*FOOTER */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}

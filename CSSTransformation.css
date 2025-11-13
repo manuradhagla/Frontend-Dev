@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #96c3f0;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #eef58a;
+    color: rgb(22, 22, 22);
+}
+
+/*Flex Container */
+.transform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+/* Common Box Styling */
+.transform-box {
+    background-color: rgb(243, 191, 191);
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    /* smooth animation for hover */
+    cursor: pointer;
+}
+
+/* Icon styling */
+.transform-box p {
+    font-size: 2rem;
+}
+
+/* Label styling */
+.transform-box span {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #004b8d;
+}
+
+/* Transform Effects on Hover */
+
+/* rotate() */
+.rotate-box:hover {
+    transform: rotate(45deg);
+}
+
+/* scale() */
+.scale-box:hover {
+    transform: scale(1.3);
+}
+
+/* translate() */
+.translate-box:hover {
+    transform: translateY(-15px);
+}
+
+/* skew() */
+.skew-box:hover {
+    transform: skew(15deg, 5deg);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: auto;
+}

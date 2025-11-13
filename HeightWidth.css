@@ -1,0 +1,83 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #004b8d;
+    color: white;
+}
+
+/* Flex container to center boxes both ways */
+.container {
+    flex: 1;
+    /* take remaining height */
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Common box styles */
+.box {
+    padding: 15px;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Box 1 - px and % */
+.box1 {
+    background-color: #ff6f61;
+    width: 200px;
+    /* fixed width in px */
+    height: 40vh;
+    /* height relative to viewport */
+}
+
+/* Box 2 - vh and em */
+.box2 {
+    background-color: #6a5acd;
+    width: 25em;
+    /* width based on font size */
+    height: 30vh;
+    /* viewport height */
+}
+
+/* Box 3 - min/max/overflow */
+.box3 {
+    background-color: #2e8b57;
+    min-height: 150px;
+    max-width: 250px;
+    overflow: auto;
+    /* scroll if content exceeds size */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 0.9rem;
+    color: #555;
+}

@@ -1,0 +1,77 @@
+/* Reset some default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #a7caee;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #f50958;
+    margin-bottom: 8px;
+}
+
+/* Flex container for boxes */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* space between boxes */
+}
+
+/* Common box styling */
+.box {
+    width: 220px;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    /* smooth hover effect */
+}
+
+/* Different border styles */
+.solid-border {
+    border-style: solid;
+}
+
+.dashed-border {
+    border-style: dashed;
+}
+
+.double-border {
+    border-style: double;
+}
+
+.groove-border {
+    border-style: groove;
+    border-radius: 15px;
+}
+
+/* Hover effect: change border color */
+.box:hover {
+    border-color: #f80727;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #130b0b;
+}
