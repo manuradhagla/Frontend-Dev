@@ -1,0 +1,68 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header,
+footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Flexbox layout for examples */
+.examples {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/* --- Selector Demonstrations --- */
+
+/* Element selector */
+p {
+    color: #c78080;
+}
+
+/* Class selector */
+.highlight {
+    background: #ffeb3b;
+    padding: 0.5rem;
+}
+
+/* ID selector */
+#unique {
+    color: #0077cc;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+a[target="_blank"]:hover {
+    text-decoration: underline;
+}
+
+/* Descendant selector */
+.combinators p {
+    background: #d1f7d1;
+    padding: 0.5rem;
+}
+
+/* Adjacent sibling selector */
+.combinators p+span {
+    color: #ff5722;
+}
+
+/* General sibling selector */
+.combinators p~span {
+    font-style: italic;
+}

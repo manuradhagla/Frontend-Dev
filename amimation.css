@@ -1,0 +1,85 @@
+/* General layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Common style for demo elements */
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 1. Moving Box */
+.moving-box {
+    background: lightcoral;
+    animation: moveBox 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(80px);
+    }
+}
+
+/* 2. Bouncing Ball */
+.bouncing-ball {
+    background: lightseagreen;
+    border-radius: 50%;
+    animation: bounceBall 1.5s ease-in-out infinite;
+}
+
+@keyframes bounceBall {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+}
+
+/* 3. Color Changing Text */
+.color-text {
+    background: lightblue;
+    animation: colorChange 2s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+    from {
+        color: darkblue;
+    }
+
+    to {
+        color: crimson;
+    }
+}

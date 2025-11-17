@@ -1,0 +1,104 @@
+/* General layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* spacing between buttons */
+}
+
+/* Base button style */
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    /* smooth hover/active effects */
+}
+
+/* Primary button */
+.primary {
+    background: royalblue;
+    color: white;
+}
+
+.primary:hover {
+    background: dodgerblue;
+}
+
+.primary:active {
+    background: navy;
+}
+
+.primary:focus {
+    outline: 2px solid orange;
+}
+
+/* Secondary button */
+.secondary {
+    background: seagreen;
+    color: white;
+}
+
+.secondary:hover {
+    background: mediumseagreen;
+}
+
+.secondary:active {
+    background: darkgreen;
+}
+
+.secondary:focus {
+    outline: 2px solid orange;
+}
+
+/* Outline button */
+.outline {
+    background: transparent;
+    border: 2px solid gray;
+    color: gray;
+}
+
+.outline:hover {
+    color: black;
+    border-color: black;
+}
+
+.outline:active {
+    background: lightgray;
+}
+
+.outline:focus {
+    outline: 2px solid orange;
+}
+
+/* Disabled button */
+.disabled {
+    background: lightgray;
+    color: darkgray;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.disabled:disabled {
+    opacity: 0.7;
+    /* visually show disabled state */
+}
